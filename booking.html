@@ -29,7 +29,7 @@
        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
        crossorigin="anonymous"
      />
-     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style1.css" />
      <!--Link Favicon-->
      <link rel="icon" type="image/png" href="media/logo3.png" />
      <link
@@ -51,31 +51,32 @@
   </head>
   <body id="home">
     <div class="card-header">
+      <div class="kotak"></div>
         <!--navbar disini-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
           <div class="container position-relative">
-            <a class="navbar-brand position-absolute top-0 start-10" href="index.html">
+            <a class="navbar-brand position-absolute" href="index.html">
               <img src="media/logo3.png" width="110px"/>
             </a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse position-absolute top-0 end-0 mt-4" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse position-absolute " id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto ">
                 <li class="nav-item active ">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#Deskripsi">About</a>
+                  <a class="nav-link" href="index.html#Deskripsi">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#kalender">Calendar</a>
+                  <a class="nav-link" href="index.html#kalender">Calendar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#fitur">Features</a>
+                  <a class="nav-link" href="index.html#komunitas">Community</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="index.html#fitur">Features</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="booking.html">Booking</a>
@@ -85,26 +86,57 @@
           </div>
         </nav>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+       <!--Navbar end-->
+
       <div class="card-body">
+        <h1 class="h1">Booking</h1>
         <!-- Form tambah data -->
         <div class="container-sm card col-md-8 mt-5">
           <div class="card-header">BOOKING HERE!</div>
           <div class="card-body">
             <!-- Start Form -->
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Team Name</label>
+            <p class="theservice">Choose User</p>
+          <hr />
+          <div class="col-sm-9" id="type">
+            <div class="form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radiooption"
+                id="eo"
+                value="option1"
+              />
+              <label class="radio-inline" for="inlineRadio1"
+                >Event Organizer</label
+              >
+            </div>
+            <div class="form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radiooption"
+                id="public"
+                value="option2"
+              />
+              <label class="radio-inline" for="inlineRadio2">Public</label>
+            </div>
+          </div>
+          <br>
+          <div>
+            <form class="form" id="eventorganizer">
+              <section id="form1">
+                <div class="mb-3">
+                <label class="form-label">Event Organizer</label>
                 <input
                   type="text"
                   class="form-control"
                   id="inputUser"
                   required
                 />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nama Event</label>
+                <input type="text" class="form-control" id="inputevent" required />
               </div>
               <div class="mb-3">
                 <label class="form-label">Date</label>
@@ -114,11 +146,61 @@
                 <label class="form-label">Time</label>
                 <input type="time" class="form-control" id="waktu" required />
               </div>
-              <button class="btn">
-                <button type="submit" class="btn btn-primary">
-                  <span>Submit</span>
-                </button>
-              </button>
+            </section>
+
+              <section id="form2">
+                <div class="game" id="game">
+                <div class="mb-3">
+                  <label class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" name="username" required/>
+                </div>
+                <div id="pilihgame">
+                <p class="pilih game">Choose Your Game</p>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="option1"
+                    id="Valorant"
+                    value="Valorant"
+                  />
+                  <label class="radio-inline" for="Valorant">Valorant</label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="option1"
+                    id="Mobile-legend"
+                    value="Mobile legend"
+                  />
+                  <label class="radio-inline" for="Mobile-legend">Mobile legend</label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="option1"
+                    id="Pubg"
+                    value="PUBG"
+                  />
+                  <label class="radio-inline" for="Pubg">PUBG</label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="option1"
+                    id="Dota-2"
+                    value="Dota 2"
+                  />
+                  <label class="radio-inline" for="Dota-2">Dota 2</label>
+                </div>
+                </div>
+              </div>
+              <br>
+            </section>
+            <input type="button" class="btn btn-primary" name="submit" value="Submit" id="kirim">
             </form>
             <!-- End Form -->
             <!-- End Form tambah data -->
@@ -126,13 +208,15 @@
             <div class="container-sm card mt-2 col-md-8">
               <div class="card-body mt-0">
                 <!-- table bootstrap -->
-                <div class="list text-center">List Kamu</div>
+                <div class="list text-center">Event List</div>
+                <div id="eventlist"></div>
               </div>
             </div>
             <!-- end table data -->
           </div>
         </div>
       </div>
+      <br>
       <!--Footer-->
       <footer class="bg-black text-center text-white">
         <!-- Grid container -->
@@ -182,7 +266,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
